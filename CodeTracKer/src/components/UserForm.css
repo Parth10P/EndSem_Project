@@ -1,0 +1,151 @@
+
+.user-form-container {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.user-input {
+  padding: 0.75rem 1.25rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.user-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.submit-button {
+  padding: 0.75rem 2rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #2563eb;
+  transform: translateY(-1px);
+}
+
+.submit-button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.submissions-container {
+  margin-top: 2.5rem;
+}
+
+.submissions-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.submissions-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.submissions-table th,
+.submissions-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.submissions-table th {
+  background-color: #f8fafc;
+  font-weight: 600;
+  color: #1e40af;
+}
+
+.submissions-table tr:last-child td {
+  border-bottom: none;
+}
+
+.submissions-table tr:hover {
+  background-color: #f8fafc;
+}
+
+.text-green {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.text-red {
+  color: #dc2626;
+  font-weight: 600;
+}
+  .spinner {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 1rem auto;
+  }
+  
+  .double-bounce1,
+  .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #2563eb;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: bounce 2s infinite ease-in-out;
+  }
+  
+  .double-bounce2 {
+    animation-delay: -1s;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .user-form-container {
+      padding: 1rem;
+    }
+  
+    .user-input {
+      width: 100%;
+    }
+  
+    .submissions-table {
+      font-size: 0.9rem;
+    }
+  }
