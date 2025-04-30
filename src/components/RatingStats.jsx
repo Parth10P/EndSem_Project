@@ -15,7 +15,7 @@ const RatingStatsTable = ({ ratingData }) => {
   };
 
   return (
-    <div style={{ marginTop: "30px" }}>
+    <div id="RatingStats" style={{ marginTop: "30px" }}>
       <h3 style={{ fontSize: "1.2rem", marginBottom: "10px" }}>
         Rating Change per Contest
       </h3>

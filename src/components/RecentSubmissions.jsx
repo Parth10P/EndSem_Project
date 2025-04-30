@@ -28,7 +28,7 @@ const RecentSubmissions = ({ handle }) => {
   }, [handle]);
 
   return (
-    <div style={{ marginTop: "30px" }}>
+    <div id="RecentSubmissions" style={{ marginTop: "30px" }}>
       <h2 style={{ fontSize: "1.5rem", marginBottom: "10px", textAlign: "center" }}>
         Recent Submissions
       </h2>

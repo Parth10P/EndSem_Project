@@ -233,7 +233,7 @@ function UserProblemStats({ handle }) {
     .sort((a, b) => parseInt(a.rating) - parseInt(b.rating));
 
   return (
-    <div style={{ padding: '24px', borderTop: '1px solid #eee', marginTop: '40px' }}>
+    <div id='ProblemSolved' style={{ padding: '24px', borderTop: '1px solid #eee', marginTop: '40px' }}>
       <h2 style={{ marginBottom: '20px', textAlign: 'center' }}>User Problem Stats</h2>
 
       {loading && <p>Loading stats...</p>}

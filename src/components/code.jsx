@@ -68,7 +68,7 @@ const CodeTrackr = () => {
   };
 
   return (
-    <div
+    <div id="userInfo"
       style={{
         padding: "20px",
         maxWidth: "900px",
@@ -79,10 +79,10 @@ const CodeTrackr = () => {
       <img
         src="//codeforces.org/s/18636/images/codeforces-sponsored-by-ton.png"
         alt="Codeforces Logo"
-        style={{ maxWidth: "250px", display: "block", margin: "0 auto 20px" }}
+        style={{ maxWidth: "250px", display: "block", margin: "0 auto 20px",marginTop:'45px' }}
       />
 
-      <h1
+      {/* <h1
         style={{
           fontSize: "2rem",
           fontWeight: "bold",
@@ -91,7 +91,7 @@ const CodeTrackr = () => {
         }}
       >
         CodeTrackr
-      </h1>
+      </h1> */}
 
       <div style={{ display: "flex", gap: "10px", marginBottom: "20px" }}>
         <input
