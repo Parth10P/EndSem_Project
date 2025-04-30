@@ -5,24 +5,33 @@ const RatingStatsTable = ({ ratingData }) => {
 
   const tableHeader = {
     borderBottom: "2px solid #ccc",
-    padding: "10px",
+    padding: "15px",
     textAlign: "left",
   };
 
   const tableCell = {
-    padding: "10px",
+    padding: "15px",
     borderBottom: "1px solid #eee",
   };
 
   return (
-    <div id="RatingStats" style={{ marginTop: "30px" }}>
-      <h3 style={{ fontSize: "1.2rem", marginBottom: "10px" }}>
+    <div id="RatingStats" style={{ marginTop: "40px" }}>
+      <h3 style={{ 
+        fontSize: "1.5rem", 
+        marginBottom: "20px",
+        fontWeight: "700",
+        color: "var(--text-primary)",
+        borderBottom: "2px solid var(--accent)",
+        paddingBottom: "10px",
+        textAlign: "center"
+      }}>
         Rating Change per Contest
       </h3>
       <table
         style={{
           width: "100%",
-          borderCollapse: "collapse",
+          borderCollapse: "separate",
+          borderSpacing: "0 5px",
           fontFamily: "Arial, sans-serif",
         }}
       >
@@ -48,6 +57,7 @@ const RatingStatsTable = ({ ratingData }) => {
                 key={index}
                 style={{
                   backgroundColor: index % 2 === 0 ? "#fff" : "#f9f9f9",
+                  marginBottom: "8px",
                 }}
               >
                 <td style={tableCell}>{entry.contestId}</td>
